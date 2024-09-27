@@ -121,8 +121,13 @@ input::placeholder {
     column-gap: 0;
   }
 
+  .container {
+    overflow: hidden;
+  }
+
   .buttons {
-    margin: 5em;
+    margin: 2em;
+    justify-content: flex-start;
   }
 
   .btn {
@@ -136,21 +141,21 @@ input::placeholder {
   }
 
   .input label {
-    margin-left: 1em;
+    margin-left: 0.5em;
   }
 
   .input input {
-    margin-right: 1em;
+    max-width: 8em;
+    margin-right: 0.5em;
   }
 
   .output {
     width: 85vw;
     font-size: 1.6rem;
     height: 20em;
-    margin-top: 2em;
     padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2em auto;
+    padding: 1em;
     border-radius: 1em;
   }
 

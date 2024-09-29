@@ -10,8 +10,11 @@ class OutputView {
     const city = inputsView.cityInput.value;
     console.log(city);
     const { weather, main, wind, visibility } = data;
+    const iconCode = weather[0].icon;
+    const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
     const html = `
       <section class="weather">
+        <p><img class = 'weather-icon' alt = "weather icon" src = ${iconUrl}></p>
         <p>City: <span class="city">${city ? city : "Unknown"}</span></p>
         <p>Temperature: <span class="temp">${main.temp}</span>°C</p>
         <p>Humidity: <span class="humidity">${main.humidity}</span>%</p>

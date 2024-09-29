@@ -87,6 +87,7 @@ input::placeholder {
 }
 
 .output {
+  position: relative;
   padding: 1em;
   margin-right: 10px;
   height: 50vh;
@@ -102,6 +103,12 @@ input::placeholder {
 .output span {
   font-size: 2.5rem;
   color: darkred;
+}
+
+.weather-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* //////////////////// RESPONSIVE ///////////////// */

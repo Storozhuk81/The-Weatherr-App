@@ -6,9 +6,10 @@ html {
   margin: 0;
 }
 h1 {
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 h1:hover {
+  transform: scale(1.2);
   text-shadow: 0 0 20px white;
 }
 
